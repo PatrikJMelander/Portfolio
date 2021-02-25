@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    background-color: f2f2f2;
+    margin: 0;
+    font-family:'Poppins' ;
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color:Black;
+        font-size: 1.2em;
+
+        span{
+            color: green;
+        }
+
+    }
+    nav{
+        display: none;
+    }
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+    .mobile-menu{
+        cursor: pointer;
+    }
+} 
+a{
+    color: rgb(90, 90, 90);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 5em 2em;
+}
+
+.hero{
+    text-align: center;
+
+}
+.left-col{
+
+    .subhead{
+        color: gray;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+    .primary-cta{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        font-size: 1.4em;
+        padding: 1em;
+        text-decoration: none;
+        border-radius: 5em;
+        display: inline-block;
+
+    }
+    .watch-video-cta{
+        display: block;
+        margin-top: 1em;
+        img{
+            margin-right: .5em;
+        }
+    }
+}
+.hero-image {
+    margin-top: 3em;
+    width: 70%;
+}
+section.features-section{
+    background: rgb(44, 43, 43);
+    color: white;
+
+}
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before{
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../css/images/bullet.svg');
+            background-size: contain;
+            margin-right:.5em;
+        }
+    }
+}
+.features-section img{
+    display: none;
+}
+.testemonial-section{
+    background-color: green;
+    color: white;
+
+    ul{
+        li{
+            background-color: yellowgreen;
+            padding: 1em 2em;
+            margin: 0em auto 5em auto;
+            border-radius: 5em;
+            text-align: center;
+            width: 80%;
+            img{
+                height: 5em;
+                width: 5em;
+                border: 5px solid;
+                border-color: yellowgreen;
+                border-radius: 50%;
+                margin-top: -2.5em;
+
+            }
+        }
+    }
+}
+h2{
+    font-size: 2em;
+}
+label{
+    display: block;
+}
+input, textarea{
+    width: 100%;
+    border-radius: .3em;
+    border: 1px solid gray;
+    padding-bottom: .3em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+.send-message-cta{
+    background-color: green;
+    color: white;
+    width: 10em;
+    font-size: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+iframe{
+    width: 100%;
+}
+nav.menu-btn{
+    display: block;
+}
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: rgb(90, 90, 90);
+    height: 100vh;
+    padding: 1em;
+    
+
+    ul.primary-nav{
+        margin-top: 3em;
+    
+    }
+    li{
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+    .mobile-menu-exit{
+        float: right;
+        padding: .5em;
+    }
+   
+}
+@media only screen and (min-width:768px){
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        
+
+        ul{
+            display: flex;
+        }
+        a{
+            color: black;
+            font-size: 1em;
+            padding: .3em .3em;
+        }
+        ul.primary-nav{
+            margin: 0;
+        }
+        li.current a {
+            font-weight: bold;
+        }
+    }
+
+        
+}
+
+
