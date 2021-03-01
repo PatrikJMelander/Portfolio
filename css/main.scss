@@ -41,52 +41,34 @@ section{
     padding: 5em 2em;
 }
 
-.hero{
+.main{
     text-align: center;
-
 }
 .left-col{
-
-    .subhead{
-        color: gray;
-        text-transform: uppercase;
-        letter-spacing: .3em;
-        font-weight: bold;
-    }
     h1{
         font-size: 2.5em;
         line-height: 1.3em;
         margin-top: .2em;
     }
-    .primary-cta{
-        background-color: green;
-        color: white;
+    .subhead{
+        color: rgb(50, 51, 49);
+        letter-spacing: .3em;
         font-weight: bold;
-        font-size: 1.4em;
-        padding: 1em;
-        text-decoration: none;
-        border-radius: 5em;
-        display: inline-block;
-
-    }
-    .watch-video-cta{
-        display: block;
-        margin-top: 1em;
-        img{
-            margin-right: .5em;
+        span{
+            color: green;
         }
     }
 }
-.hero-image {
+.profile-image {
     margin-top: 3em;
     width: 70%;
 }
-section.features-section{
+.skills{
     background: rgb(44, 43, 43);
     color: white;
 
 }
-ul.features-list {
+ul.skills-list {
     margin: 0;
     padding-left: .1em;
     display: grid;
@@ -104,41 +86,14 @@ ul.features-list {
             position: absolute;
             width: 20px;
             height: 20px;
-            background-image: url('../css/images/bullet.svg');
+            background-image: url('../css/images/star.svg');
             background-size: contain;
             margin-right:.5em;
         }
     }
 }
-.features-section img{
-    display: none;
-}
-.testemonial-section{
-    background-color: green;
-    color: white;
-
-    ul{
-        li{
-            background-color: yellowgreen;
-            padding: 1em 2em;
-            margin: 0em auto 5em auto;
-            border-radius: 5em;
-            text-align: center;
-            width: 80%;
-            img{
-                height: 5em;
-                width: 5em;
-                border: 5px solid;
-                border-color: yellowgreen;
-                border-radius: 50%;
-                margin-top: -2.5em;
-
-            }
-        }
-    }
-}
 h2{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 label{
     display: block;
@@ -233,6 +188,7 @@ nav{
         }
         li.current a {
             font-weight: bold;
+            
         }
     }
 

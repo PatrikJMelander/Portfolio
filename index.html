@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>home</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,90 +16,42 @@
             <nav>
                 <img id= "mobile_exit" class = "mobile-menu-exit"src="css/images/x-mark.svg" alt="close nav">
                 <ul class="primary-nav">
-                    <li><a href="#">My Side Projects</a></li>
-                    <li><a href="#">Scool Assignments</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="html\portfolio.html">Portfolio</a></li>
+                    <li><a href="html\about-me.html">About Me</a></li>
                 </ul>
                 <ul class="secondary-nav">
-                    <li><a href="#">Conntact</a></li>
+                    <li><a href="html\contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-    <section class = "hero">
-        <div class = "container">
+    <section class ="main">
+        <class class = "container">
             <div class = "left-col">
-                <p class = "subhead">En liten undermeny</p>
-                <h1>Stor Meny Som Fångar Ögat</h1>
-
-                <div class = "hero-cta">
-                    <a href="#" class="primary-cta">En Knapp</a>
-                    <a href="#" class="watch-video-cta">
-                        <img src="css/images/video-camera.svg" alt="Watch a video">Watch a video
-                    </a>
-                </div>
+                <h1>Patrik Melander</h1>
+                <p class = "subhead"> I'm currently looking for a Lia(internship) for the fall of 2021 starting in
+                    september. I'm mainly using java but also a little kotlin, on the side im trying to
+                     lern Html5, CSS, Sass, Js. We also learn how to setup and use a database with
+                      MySQL and SQL server. <span>Check my projects for examples!</span>Check my projects for examples!
+                </p>
             </div>
-            <img class="hero-image" src="css/images/illustration.svg" alt="illustration">
-        </div>
+        </class>
+            <div class = "right-col">
+                <img class="profile-image" src="css\images\profil.png" alt="picture of me">
+            </div>
     </section> 
-    <section class="features-section">
+    <section class="skills">
         <div class="container">
-            <ul class="features-list">
-                <li>Best Shoe Webshop Ever</li>
-                <li>The Tapas Resturant</li>
-                <li>Quizz-Kampen</li>
-                <li>4inARow</li>
-                <li>The Gym</li>
-                <li>Calculator</li>
-                <li>Booking system for SkiSchool</li>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>html</li>
+                <li>css</li>
+                <li>Kotlin</li>
+                <li>Scala</li>
+                <li>SQL Database</li>
+                <li>Js</li>
             </ul>
-            <img src="css/images/holding-phone.jpg" alt="man holding holding">
-        </div>
-    </section>
-    <section class = "testemonial-section">
-        <div class="container">
-            <ul>
-                <li>
-                    <img src="css/images/person.jpg" alt="person">
-                    <blockquote>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aliquid ipsum consequatur harum commodi corrupti, amet fugit suscipit, nulla esse quam delectus voluptates eaque facere totam dicta ab! Velit, dolorem.
-                    </blockquote>
-                    <cite>-Patrik-</cite>
-                </li>
-                <li>
-                    <img src="css/images/person.jpg" alt="person">
-                    <blockquote>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aliquid ipsum consequatur harum commodi corrupti, amet fugit suscipit, nulla esse quam delectus voluptates eaque facere totam dicta ab! Velit, dolorem.
-                    </blockquote>
-                    <cite>-Patrik-</cite>
-                </li>
-                <li>
-                    <img src="css/images/person.jpg" alt="person">
-                    <blockquote>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe aliquid ipsum consequatur harum commodi corrupti, amet fugit suscipit, nulla esse quam delectus voluptates eaque facere totam dicta ab! Velit, dolorem.
-                    </blockquote>
-                    <cite>-Patrik-</cite>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-left">
-                <h2>Contact</h2>
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    
-                    <input type="submit" class="send-message-cta" value="Send message">
-                </form>
-            </div>
-            <div class="contact-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6843.027593679569!2d17.926740385907536!3d59.34222862924253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e1e43cac981%3A0x79938dc7521d624b!2sBromma%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1614156900639!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
         </div>
     </section>
     <script>
@@ -115,8 +66,6 @@
         mobileBtnExit.addEventListener('click', () =>{
             nav.classList.remove('menu-btn');
         })
-
-
     </script>
 </body>
 </html>

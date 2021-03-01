@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  background-color: white;
+  background-color: rgb(216, 216, 216);
   padding: 1em;
 }
 
@@ -50,15 +50,18 @@ section {
   padding: 5em 2em;
 }
 
-.hero {
+.main {
   text-align: center;
+  display: flex;
 }
 
 .left-col .subhead {
-  color: gray;
-  text-transform: uppercase;
-  letter-spacing: .3em;
+  color: rgb(73, 73, 73);
+  letter-spacing: .1em;
   font-weight: bold;
+}
+.left-col .subhead span{
+  color: green;
 }
 
 .left-col h1 {
@@ -67,86 +70,39 @@ section {
   margin-top: .2em;
 }
 
-.left-col .primary-cta {
-  background-color: green;
-  color: white;
-  font-weight: bold;
-  font-size: 1.4em;
-  padding: 1em;
-  text-decoration: none;
-  border-radius: 5em;
-  display: inline-block;
-}
-
-.left-col .watch-video-cta {
-  display: block;
-  margin-top: 1em;
-}
-
-.left-col .watch-video-cta img {
-  margin-right: .5em;
-}
-
-.hero-image {
+.profile-image {
   margin-top: 3em;
-  width: 70%;
+  width: 150px;
+  border-radius: 50%;
 }
 
-section.features-section {
+section.skills {
   background: #2c2b2b;
   color: white;
 }
 
-ul.features-list {
+ul.skills-list {
   margin: 0;
   padding-left: .1em;
 }
 
-ul.features-list li {
+ul.skills-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
 
-ul.features-list li:before {
+ul.skills-list li:before {
   content: '';
   left: -2em;
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("../css/images/bullet.svg");
+  background-image: url("../css/images/../images/star.svg");
   background-size: contain;
   margin-right: .5em;
 }
-
-.features-section img {
-  display: none;
-}
-
-.testemonial-section {
-  background-color: green;
-  color: white;
-}
-
-.testemonial-section ul li {
-  background-color: yellowgreen;
-  padding: 1em 2em;
-  margin: 0em auto 5em auto;
-  border-radius: 5em;
-  text-align: center;
-  width: 80%;
-}
-
-.testemonial-section ul li img {
-  height: 5em;
-  width: 5em;
-  border: 5px solid;
-  border-color: yellowgreen;
-  border-radius: 50%;
-  margin-top: -2.5em;
-}
-
 h2 {
   font-size: 2em;
 }
@@ -155,8 +111,17 @@ label {
   display: block;
 }
 
-input, textarea {
-  width: 100%;
+input{
+  width: 25%;
+  border-radius: .3em;
+  border: 1px solid gray;
+  padding-bottom: .3em;
+  margin-bottom: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+textarea{
+  width: 50%;
   border-radius: .3em;
   border: 1px solid gray;
   padding-bottom: .3em;
@@ -208,6 +173,7 @@ nav li a {
 
 nav li a:hover {
   font-weight: bold;
+  color: green;
 }
 
 nav .mobile-menu-exit {
