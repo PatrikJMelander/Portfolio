@@ -180,6 +180,9 @@ nav .mobile-menu-exit {
   float: right;
   padding: .5em;
 }
+.portfolio-images{
+  width: 40vh;
+}
 
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
