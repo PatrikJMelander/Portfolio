@@ -183,6 +183,9 @@ nav .mobile-menu-exit {
 .portfolio-images{
   width: 40vh;
 }
+.footer{
+  padding: 0 5vh 0 5vh;
+}
 
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
