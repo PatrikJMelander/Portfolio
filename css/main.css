@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
-  background-color: f2f2f2;
+  background-color: #f2f2f2;
   margin: 0;
   font-family: 'Poppins';
 }
@@ -26,8 +26,6 @@ body {
 }
 
 .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
 }
@@ -164,18 +162,12 @@ footer{
     display: none;
   }
   .navbar .container {
-    display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
         grid-template-columns: 180px auto;
   }
   .navbar nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
@@ -183,8 +175,6 @@ footer{
     padding: 0;
   }
   .navbar nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar nav a {
