@@ -107,38 +107,6 @@ h2 {
   font-size: 2em;
 }
 
-label {
-  display: block;
-}
-
-input{
-  width: 25%;
-  border-radius: .3em;
-  border: 1px solid gray;
-  padding-bottom: .3em;
-  margin-bottom: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-textarea{
-  width: 50%;
-  border-radius: .3em;
-  border: 1px solid gray;
-  padding-bottom: .3em;
-  margin-bottom: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.send-message-cta {
-  background-color: green;
-  color: white;
-  width: 10em;
-  font-size: 1em;
-  border-radius: 1em;
-  cursor: pointer;
-}
-
 iframe {
   width: 100%;
 }
